@@ -2,6 +2,7 @@ pipeline{
 	agent{
 		docker{
 			image 'maven:3-alpine'
+			lable 'docker'
 			args '-v /usr/maven/maven_repo:/root/.m2'
 		}
 	}
